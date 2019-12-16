@@ -1,5 +1,41 @@
 # Ubiquity Unifi Security Gateway (USG) Configuration for Bouygues Telecom With IPTV
 
+## Global design
+```
+           Fiber
+             +
+             |
+             |
+             |
+     +-------+-------+
+     |               |
+     | ONT Bouygues  |
+     |               |
+     +-------+-------+
+             |
+             |
+             |
+     vlan100 internet/IPTV
+             |
+             |
+          +--+--+
+          |     |
+          | USG |
+          |     |
+          ++---++
+     LAN1  |   |   LAN2
+     +-----+   +------+
+     |                |
+     |                |
+     |                |
++----+----+      +----+----+
+|         |      |         |
+| Switch  |      |  BOX TV |
+|         |      |         |
++---------+      +---------+
+
+```
+
 ## Prerequisites
 
 2.  Have a Ubiquity Unifi Controller running. If not, see: [https://github.com/jacobalberty/unifi-docker](https://github.com/jacobalberty/unifi-docker)
