@@ -1,11 +1,5 @@
 # Ubiquity Unifi Security Gateway (USG) Configuration for Bouygues Telecom With IPTV
 
-```mermaid
-graph TD
-A[UniFi Security Gateway] --> B(Switch Lan1)
-A --> C(BBox TV Lan2)
-```
-
 ## Prerequisites
 
 2.  Have a Ubiquity Unifi Controller running. If not, see: [https://github.com/jacobalberty/unifi-docker](https://github.com/jacobalberty/unifi-docker)
