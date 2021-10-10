@@ -64,6 +64,7 @@
    "interfaces":{
       "ethernet":{
          "eth0":{
+            "mac": "XX:XX:XX:XX:XX:XX",
             "vif":{
                "100":{
                   "dhcp-options":{
@@ -73,7 +74,23 @@
                      "default-route":"update",
                      "default-route-distance":"210",
                      "name-server":"update"
-                  }
+                  },
+                  "dhcpv6-pd": {
+                    "duid": "00:03:00:01:XX:XX:XX:XX:XX:XX",
+                    "pd": {
+                        "0": {
+                            "interface": {
+                                "eth0": {
+                                    "host-address": "::ffff",
+                                    "prefix-id": ":0"
+                                }
+                            },
+                            "prefix-length": "60"
+                        }
+                    },
+                    "prefix-only": "''",
+                    "rapid-commit": "disable"
+                }
                }
             }
          }

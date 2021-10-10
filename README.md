@@ -53,7 +53,11 @@ By default, the _config.gateway.json_ file doesn't exist, it has to be created i
 
 1. Create a new file using a text editor such as VScode or Notepad++ and copy the config.gateway.json to this repository
 
-2. Once the contents of the file has been validated, save it by naming it **config.gateway.json** and placing it under the **<unifi_base>/data/sites/site_ID** directory stored on the Controller.
+2. Change in your **config.gateway.json** ```XX:XX:XX:XX:XX:XX``` and add the mac address of your BBOX 
+
+![alt text](./Screenshot-mac.png "Title")
+
+3. Once the contents of the file has been validated, save it by naming it **config.gateway.json** and placing it under the **<unifi_base>/data/sites/site_ID** directory stored on the Controller.
 
 >  **User Tip:** Depending on your operating system, placing the file under this directory might be as simple as drag and drop, or using a FTP server might be necessary. The **config.gateway.json** file must have unifi:unifi as the owner and group permissions. You can check to verify with `ls -l <unifi_base>/data/sites/site_ID`. To change it, once you're in the site directory, use the command: `chown unifi:unifi config.gateway.json`
 
